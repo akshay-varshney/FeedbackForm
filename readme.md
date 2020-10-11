@@ -17,3 +17,4 @@ query>> SHOW TABLES;
 4. After database is ready. Run the command in cmd 
 python main.py
 
+
