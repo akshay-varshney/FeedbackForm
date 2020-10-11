@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <h1 class="home">Feedback Form</h1> 
+    <img src="https://miro.medium.com/max/1400/1*HLGtY6O2vUHqIyEbWdmBgA.jpeg" alt="Programming" class="image" href="#">
+    <div>
+        {% if msg %}
+        <div class="thankyou">Thank you {{msg}}, for your valuable Feedback!</div>
+       {% endif %}
+    </div>
+    <div class="another-response"><a href="{{ url_for('home') }}" >Submit Another Response!</a></div>
+
+</html>

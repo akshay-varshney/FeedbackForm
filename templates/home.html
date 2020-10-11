@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <h1 class="home">Feedback Form</h1> 
+    <img src="https://miro.medium.com/max/1400/1*HLGtY6O2vUHqIyEbWdmBgA.jpeg" alt="Programming" class="image" href="#">
+    <div class="wrap">
+        <div class="search">
+        <form action="{{ url_for('home') }}" method="post" autocomplete="off">
+        <div class="customer">Name</div>    
+        <label for="customername">
+        <i class="fas"></i>
+        </label>
+        <input type="text" class="cname" name="customername" placeholder="Name" required size="50">
+        <div class="language">Select Programming Language</div>
+        <label for="language">
+            <i class="fas"></i>
+        </label>
+        <select class="form-control" id="exampleFormControlSelect1" required name="language" size="0">
+            <option>Java</option>
+            <option>JavaScript</option>
+            <option>Python</option>
+            <option>C++</option>
+            <option>Kotlin</option>
+            <option>Flutter</option>
+            <option>Perl</option>
+            <option>Ruby</option>
+            <option>Rust</option>
+            <option>C#</option>
+            <option>Swift</option>
+            <option>PHP</option>
+            <option>SQL</option>
+        </select>
+        <div class="rate">Rating</div> 
+        <div class="radio">
+        <input id="rating-1" type="radio" name="rating" value="1"> 
+        <label for="rating-1">1 star</label>
+        <input id="rating-2" type="radio" name="rating" value="2">
+        <label for="rating-2">2 stars</label>
+        <input id="rating-3" type="radio" name="rating" value="3">
+        <label for="rating-3">3 stars</label>
+        <input id="rating-4" type="radio" name="rating" value="4">
+        <label for="rating-4">4 stars</label>
+        <input id="rating-5" type="radio" name="rating" value="5">
+        <label for="rating-5">5 stars</label>
+        </div>
+        <div class="paragraph">Any Comments</div>
+        <textarea name="comment" cols="85" rows="10" class="user-comment"></textarea>
+        <div></div>
+        <input type="submit" value="Submit" class="submit">
+        </div>
+     </div>
+</html>
